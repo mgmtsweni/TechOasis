@@ -3,9 +3,13 @@ import mysql.connector
 import sys
 """ Store name, phone number, email, and address for each contact."""
 
+
 def database_connection():
-        connect = mysql.connector.connect(host="localhost",
-                                       user="root", password="m4hl4ts3")
+        connect = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="m4hl4ts3",
+            database="pydata")
         return connect
 
 def Add_Contact(connection):
@@ -182,8 +186,6 @@ def Contact_Book():
         else:
             print("Invalid option, try again")
 
-'''
 if __name__ == "__main__":
     while True:
         Contact_Book()
-'''
