@@ -1,4 +1,3 @@
-from database import database_connection
 import mysql.connector
 import sys
 """ Store name, phone number, email, and address for each contact."""
@@ -8,7 +7,7 @@ def database_connection():
         connect = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="m4hl4ts3",
+            password="#####",
             database="pydata")
         return connect
 
